@@ -11,7 +11,12 @@ venv/
 !.env.example
 
 # Local data
-data/
+# Ignore local documents by default
+data/*
+
+# Include the synthetic sample corpus for the loader assignment
+!data/sample_corpus/
+!data/sample_corpus/**
 
 # Python cache
 __pycache__/
