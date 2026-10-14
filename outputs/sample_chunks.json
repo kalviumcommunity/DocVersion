@@ -1,0 +1,93 @@
+[
+  {
+    "chunk_id": "employee_handbook_chunk_000",
+    "text": "Employee Handbook\n\nWorking Hours:\nEmployees generally work from 9:00 AM to 5:00 PM, Monday through Friday.\n\nAttendance:\nEmployees should notify their manager if they expect to arrive late.\n\nWorkplace Conduct:\nEmployees are expected to communicate respectfully with colleagues.",
+    "metadata": {
+      "source": "employee_handbook.txt",
+      "source_path": "data/sample_corpus/employee_handbook.txt",
+      "section": "Document body",
+      "page": null,
+      "chunk_index": 0,
+      "start_char": 0,
+      "end_char": 276
+    }
+  },
+  {
+    "chunk_id": "leave_policy_chunk_000",
+    "text": "# Leave Policy\n\n",
+    "metadata": {
+      "source": "leave_policy.md",
+      "source_path": "data/sample_corpus/leave_policy.md",
+      "section": "Leave Policy",
+      "page": null,
+      "chunk_index": 0,
+      "start_char": 0,
+      "end_char": 16
+    }
+  },
+  {
+    "chunk_id": "leave_policy_chunk_001",
+    "text": "## Annual Leave\n\nEmployees receive 20 days of annual leave per calendar year.\n\n",
+    "metadata": {
+      "source": "leave_policy.md",
+      "source_path": "data/sample_corpus/leave_policy.md",
+      "section": "Annual Leave",
+      "page": null,
+      "chunk_index": 1,
+      "start_char": 16,
+      "end_char": 95
+    }
+  },
+  {
+    "chunk_id": "leave_policy_chunk_002",
+    "text": "## Leave Requests\n\nEmployees should submit leave requests to their manager in advance.\n\n",
+    "metadata": {
+      "source": "leave_policy.md",
+      "source_path": "data/sample_corpus/leave_policy.md",
+      "section": "Leave Requests",
+      "page": null,
+      "chunk_index": 2,
+      "start_char": 95,
+      "end_char": 183
+    }
+  },
+  {
+    "chunk_id": "leave_policy_chunk_003",
+    "text": "## Carryover\n\nRules regarding unused leave carryover are not specified in this sample.",
+    "metadata": {
+      "source": "leave_policy.md",
+      "source_path": "data/sample_corpus/leave_policy.md",
+      "section": "Carryover",
+      "page": null,
+      "chunk_index": 3,
+      "start_char": 183,
+      "end_char": 269
+    }
+  },
+  {
+    "chunk_id": "security_policy_chunk_000",
+    "text": "Security Policy Security Policy Employees must protect their account credentials. Passwords must not be shared with other employees. Reporting Incidents Suspected security incidents should be reported to the IT team.",
+    "metadata": {
+      "source": "security_policy.html",
+      "source_path": "data/sample_corpus/security_policy.html",
+      "section": "Document body",
+      "page": null,
+      "chunk_index": 0,
+      "start_char": 0,
+      "end_char": 216
+    }
+  },
+  {
+    "chunk_id": "workplace_guidelines_chunk_000",
+    "text": "Workplace Guidelines\nEmployees should maintain a respectful workplace.\nCompany documents should be handled responsibly.",
+    "metadata": {
+      "source": "workplace_guidelines.pdf",
+      "source_path": "data/sample_corpus/workplace_guidelines.pdf",
+      "section": "Document body",
+      "page": null,
+      "chunk_index": 0,
+      "start_char": 0,
+      "end_char": 119
+    }
+  }
+]
