@@ -1,0 +1,871 @@
+{
+  "document_info": {
+    "source_name": "python_faq_sample.txt",
+    "total_characters": 10936
+  },
+  "chosen_strategy": {
+    "name": "paragraph_based",
+    "rationale": "Preserves structural cohesion of technical explanations, FAQ Q&A units, bulleted version rules, and code blocks without arbitrary mid-word/mid-sentence splits."
+  },
+  "paragraph_based": {
+    "settings": {
+      "delimiter": "blank_line (\\n\\s*\\n)",
+      "trim_whitespace": true,
+      "discard_empty": true
+    },
+    "statistics": {
+      "chunk_count": 64,
+      "total_characters": 10810,
+      "average_chunk_size": 168.91,
+      "min_chunk_size": 20,
+      "max_chunk_size": 881
+    },
+    "representative_samples": [
+      {
+        "chunk_id": "para_chunk_000",
+        "chunk_index": 0,
+        "strategy": "paragraph_based",
+        "start_char": 0,
+        "end_char": 23,
+        "char_length": 23,
+        "text": "1.1 General Information",
+        "source": "python_faq_sample.txt"
+      },
+      {
+        "chunk_id": "para_chunk_001",
+        "chunk_index": 1,
+        "strategy": "paragraph_based",
+        "start_char": 25,
+        "end_char": 46,
+        "char_length": 21,
+        "text": "1.1.1 What is Python?",
+        "source": "python_faq_sample.txt"
+      },
+      {
+        "chunk_id": "para_chunk_032",
+        "chunk_index": 32,
+        "strategy": "paragraph_based",
+        "start_char": 6788,
+        "end_char": 6838,
+        "char_length": 50,
+        "text": "1.1.7 How do I obtain a copy of the Python source?",
+        "source": "python_faq_sample.txt"
+      },
+      {
+        "chunk_id": "para_chunk_063",
+        "chunk_index": 63,
+        "strategy": "paragraph_based",
+        "start_char": 10916,
+        "end_char": 10936,
+        "char_length": 20,
+        "text": "No, but it helps. :)",
+        "source": "python_faq_sample.txt"
+      }
+    ],
+    "all_chunks": [
+      {
+        "chunk_id": "para_chunk_000",
+        "chunk_index": 0,
+        "char_length": 23,
+        "start_char": 0,
+        "end_char": 23,
+        "preview": "1.1 General Information"
+      },
+      {
+        "chunk_id": "para_chunk_001",
+        "chunk_index": 1,
+        "char_length": 21,
+        "start_char": 25,
+        "end_char": 46,
+        "preview": "1.1.1 What is Python?"
+      },
+      {
+        "chunk_id": "para_chunk_002",
+        "chunk_index": 2,
+        "char_length": 831,
+        "start_char": 48,
+        "end_char": 879,
+        "preview": "Python is an interpreted, interactive, object-oriented programming language. It incorporates modules..."
+      },
+      {
+        "chunk_id": "para_chunk_003",
+        "chunk_index": 3,
+        "char_length": 45,
+        "start_char": 881,
+        "end_char": 926,
+        "preview": "1.1.2 What is the Python Software Foundation?"
+      },
+      {
+        "chunk_id": "para_chunk_004",
+        "chunk_index": 4,
+        "char_length": 320,
+        "start_char": 928,
+        "end_char": 1248,
+        "preview": "The Python Software Foundation is an independent non-profit organization that holds the copyright on..."
+      },
+      {
+        "chunk_id": "para_chunk_005",
+        "chunk_index": 5,
+        "char_length": 130,
+        "start_char": 1250,
+        "end_char": 1380,
+        "preview": "Donations to the PSF are tax-exempt in the US. If you use Python and find it helpful, please contrib..."
+      },
+      {
+        "chunk_id": "para_chunk_006",
+        "chunk_index": 6,
+        "char_length": 60,
+        "start_char": 1382,
+        "end_char": 1442,
+        "preview": "1.1.3 Are there copyright restrictions on the use of Python?"
+      },
+      {
+        "chunk_id": "para_chunk_007",
+        "chunk_index": 7,
+        "char_length": 450,
+        "start_char": 1444,
+        "end_char": 1894,
+        "preview": "You can do anything you want with the source, as long as you leave the copyrights in and display tho..."
+      },
+      {
+        "chunk_id": "para_chunk_008",
+        "chunk_index": 8,
+        "char_length": 87,
+        "start_char": 1896,
+        "end_char": 1983,
+        "preview": "See the license page to find further explanations and the full text of the PSF License."
+      },
+      {
+        "chunk_id": "para_chunk_009",
+        "chunk_index": 9,
+        "char_length": 143,
+        "start_char": 1985,
+        "end_char": 2128,
+        "preview": "The Python logo is trademarked, and in certain cases permission is required to use it. Consult the T..."
+      },
+      {
+        "chunk_id": "para_chunk_010",
+        "chunk_index": 10,
+        "char_length": 48,
+        "start_char": 2130,
+        "end_char": 2178,
+        "preview": "1.1.4 Why was Python created in the first place?"
+      },
+      {
+        "chunk_id": "para_chunk_011",
+        "chunk_index": 11,
+        "char_length": 80,
+        "start_char": 2180,
+        "end_char": 2260,
+        "preview": "Here’s a very brief summary of what started it all, written by Guido van Rossum:"
+      },
+      {
+        "chunk_id": "para_chunk_012",
+        "chunk_index": 12,
+        "char_length": 369,
+        "start_char": 2262,
+        "end_char": 2631,
+        "preview": "I had extensive experience with implementing an interpreted language in the ABC group at CWI, and fr..."
+      },
+      {
+        "chunk_id": "para_chunk_013",
+        "chunk_index": 13,
+        "char_length": 881,
+        "start_char": 2633,
+        "end_char": 3514,
+        "preview": "I had a number of gripes about the ABC language, but also liked many of its features. It was impossi..."
+      },
+      {
+        "chunk_id": "para_chunk_014",
+        "chunk_index": 14,
+        "char_length": 273,
+        "start_char": 3516,
+        "end_char": 3789,
+        "preview": "It occurred to me that a scripting language with a syntax like ABC but with access to the Amoeba sys..."
+      },
+      {
+        "chunk_id": "para_chunk_015",
+        "chunk_index": 15,
+        "char_length": 302,
+        "start_char": 3791,
+        "end_char": 4093,
+        "preview": "During the 1989 Christmas holidays, I had a lot of time on my hand, so I decided to give it a try. D..."
+      },
+      {
+        "chunk_id": "para_chunk_016",
+        "chunk_index": 16,
+        "char_length": 123,
+        "start_char": 4095,
+        "end_char": 4218,
+        "preview": "In February 1991, after just over a year of development, I decided to post to USENET. The rest is in..."
+      },
+      {
+        "chunk_id": "para_chunk_017",
+        "chunk_index": 17,
+        "char_length": 30,
+        "start_char": 4220,
+        "end_char": 4250,
+        "preview": "1.1.5 What is Python good for?"
+      },
+      {
+        "chunk_id": "para_chunk_018",
+        "chunk_index": 18,
+        "char_length": 710,
+        "start_char": 4252,
+        "end_char": 4962,
+        "preview": "Python is a high-level general-purpose programming language that can be applied to many different cl..."
+      },
+      {
+        "chunk_id": "para_chunk_019",
+        "chunk_index": 19,
+        "char_length": 56,
+        "start_char": 4964,
+        "end_char": 5020,
+        "preview": "1.1.6 How does the Python version numbering scheme work?"
+      },
+      {
+        "chunk_id": "para_chunk_020",
+        "chunk_index": 20,
+        "char_length": 46,
+        "start_char": 5022,
+        "end_char": 5068,
+        "preview": "Python versions are numbered “A.B.C” or “A.B”:"
+      },
+      {
+        "chunk_id": "para_chunk_021",
+        "chunk_index": 21,
+        "char_length": 98,
+        "start_char": 5070,
+        "end_char": 5168,
+        "preview": "• A is the major version number – it is only incremented for really major changes in the language."
+      },
+      {
+        "chunk_id": "para_chunk_022",
+        "chunk_index": 22,
+        "char_length": 86,
+        "start_char": 5170,
+        "end_char": 5256,
+        "preview": "• B is the minor version number – it is incremented for less earth-shattering changes."
+      },
+      {
+        "chunk_id": "para_chunk_023",
+        "chunk_index": 23,
+        "char_length": 76,
+        "start_char": 5258,
+        "end_char": 5334,
+        "preview": "• C is the micro version number – it is incremented for each bugfix release."
+      },
+      {
+        "chunk_id": "para_chunk_024",
+        "chunk_index": 24,
+        "char_length": 488,
+        "start_char": 5336,
+        "end_char": 5824,
+        "preview": "Not all releases are bugfix releases. In the run-up to a new feature release, a series of developmen..."
+      },
+      {
+        "chunk_id": "para_chunk_025",
+        "chunk_index": 25,
+        "char_length": 69,
+        "start_char": 5826,
+        "end_char": 5895,
+        "preview": "Alpha, beta and release candidate versions have an additional suffix:"
+      },
+      {
+        "chunk_id": "para_chunk_026",
+        "chunk_index": 26,
+        "char_length": 66,
+        "start_char": 5897,
+        "end_char": 5963,
+        "preview": "• The suffix for an alpha version is “aN” for some small number N."
+      },
+      {
+        "chunk_id": "para_chunk_027",
+        "chunk_index": 27,
+        "char_length": 64,
+        "start_char": 5965,
+        "end_char": 6029,
+        "preview": "• The suffix for a beta version is “bN” for some small number N."
+      },
+      {
+        "chunk_id": "para_chunk_028",
+        "chunk_index": 28,
+        "char_length": 78,
+        "start_char": 6031,
+        "end_char": 6109,
+        "preview": "• The suffix for a release candidate version is “rcN” for some small number N."
+      },
+      {
+        "chunk_id": "para_chunk_029",
+        "chunk_index": 29,
+        "char_length": 140,
+        "start_char": 6111,
+        "end_char": 6251,
+        "preview": "In other words, all versions labeled 2.0aN precede the versions labeled 2.0bN, which precede version..."
+      },
+      {
+        "chunk_id": "para_chunk_030",
+        "chunk_index": 30,
+        "char_length": 302,
+        "start_char": 6253,
+        "end_char": 6555,
+        "preview": "You may also find version numbers with a “+” suffix, e.g. “2.2+”. These are unreleased versions, bui..."
+      },
+      {
+        "chunk_id": "para_chunk_031",
+        "chunk_index": 31,
+        "char_length": 229,
+        "start_char": 6557,
+        "end_char": 6786,
+        "preview": "See the Developer’s Guide for more information about the development cycle, and PEP 387 to learn mor..."
+      },
+      {
+        "chunk_id": "para_chunk_032",
+        "chunk_index": 32,
+        "char_length": 50,
+        "start_char": 6788,
+        "end_char": 6838,
+        "preview": "1.1.7 How do I obtain a copy of the Python source?"
+      },
+      {
+        "chunk_id": "para_chunk_033",
+        "chunk_index": 33,
+        "char_length": 483,
+        "start_char": 6840,
+        "end_char": 7323,
+        "preview": "The latest Python source distribution is always available from python.org, at https://www.python.org..."
+      },
+      {
+        "chunk_id": "para_chunk_034",
+        "chunk_index": 34,
+        "char_length": 133,
+        "start_char": 7325,
+        "end_char": 7458,
+        "preview": "Consult the Getting Started section of the Python Developer’s Guide for more information on getting ..."
+      },
+      {
+        "chunk_id": "para_chunk_035",
+        "chunk_index": 35,
+        "char_length": 43,
+        "start_char": 7460,
+        "end_char": 7503,
+        "preview": "1.1.8 How do I get documentation on Python?"
+      },
+      {
+        "chunk_id": "para_chunk_036",
+        "chunk_index": 36,
+        "char_length": 222,
+        "start_char": 7505,
+        "end_char": 7727,
+        "preview": "The standard documentation for the current stable version of Python is available at https://docs.pyt..."
+      },
+      {
+        "chunk_id": "para_chunk_037",
+        "chunk_index": 37,
+        "char_length": 189,
+        "start_char": 7729,
+        "end_char": 7918,
+        "preview": "The documentation is written in reStructuredText and processed by the Sphinx documentation tool. The..."
+      },
+      {
+        "chunk_id": "para_chunk_038",
+        "chunk_index": 38,
+        "char_length": 63,
+        "start_char": 7920,
+        "end_char": 7983,
+        "preview": "1.1.9 I’ve never programmed before. Is there a Python tutorial?"
+      },
+      {
+        "chunk_id": "para_chunk_039",
+        "chunk_index": 39,
+        "char_length": 101,
+        "start_char": 7985,
+        "end_char": 8086,
+        "preview": "There are numerous tutorials and books available. The standard documentation includes tutorial-index..."
+      },
+      {
+        "chunk_id": "para_chunk_040",
+        "chunk_index": 40,
+        "char_length": 112,
+        "start_char": 8088,
+        "end_char": 8200,
+        "preview": "Consult the Beginner’s Guide to find information for beginning Python programmers, including lists o..."
+      },
+      {
+        "chunk_id": "para_chunk_041",
+        "chunk_index": 41,
+        "char_length": 62,
+        "start_char": 8202,
+        "end_char": 8264,
+        "preview": "1.1.10 Is there a newsgroup or mailing list devoted to Python?"
+      },
+      {
+        "chunk_id": "para_chunk_042",
+        "chunk_index": 42,
+        "char_length": 349,
+        "start_char": 8266,
+        "end_char": 8615,
+        "preview": "There is a newsgroup, comp.lang.python, and a mailing list, python-list. The newsgroup and mailing l..."
+      },
+      {
+        "chunk_id": "para_chunk_043",
+        "chunk_index": 43,
+        "char_length": 216,
+        "start_char": 8617,
+        "end_char": 8833,
+        "preview": "Announcements of new software releases and events can be found in comp.lang.python.announce, a low-t..."
+      },
+      {
+        "chunk_id": "para_chunk_044",
+        "chunk_index": 44,
+        "char_length": 107,
+        "start_char": 8835,
+        "end_char": 8942,
+        "preview": "More info about other mailing lists and newsgroups can be found at https://www.python.org/community/..."
+      },
+      {
+        "chunk_id": "para_chunk_045",
+        "chunk_index": 45,
+        "char_length": 50,
+        "start_char": 8944,
+        "end_char": 8994,
+        "preview": "1.1.11 How do I get a beta test version of Python?"
+      },
+      {
+        "chunk_id": "para_chunk_046",
+        "chunk_index": 46,
+        "char_length": 260,
+        "start_char": 8996,
+        "end_char": 9256,
+        "preview": "Alpha and beta releases are available from https://www.python.org/downloads/. All releases are annou..."
+      },
+      {
+        "chunk_id": "para_chunk_047",
+        "chunk_index": 47,
+        "char_length": 112,
+        "start_char": 9258,
+        "end_char": 9370,
+        "preview": "You can also access the development version of Python through Git. See The Python Developer’s Guide ..."
+      },
+      {
+        "chunk_id": "para_chunk_048",
+        "chunk_index": 48,
+        "char_length": 58,
+        "start_char": 9372,
+        "end_char": 9430,
+        "preview": "1.1.12 How do I submit bug reports and patches for Python?"
+      },
+      {
+        "chunk_id": "para_chunk_049",
+        "chunk_index": 49,
+        "char_length": 101,
+        "start_char": 9432,
+        "end_char": 9533,
+        "preview": "To report a bug or submit a patch, use the issue tracker at https://github.com/python/cpython/issues..."
+      },
+      {
+        "chunk_id": "para_chunk_050",
+        "chunk_index": 50,
+        "char_length": 86,
+        "start_char": 9535,
+        "end_char": 9621,
+        "preview": "For more information on how Python is developed, consult the Python Developer’s Guide."
+      },
+      {
+        "chunk_id": "para_chunk_051",
+        "chunk_index": 51,
+        "char_length": 74,
+        "start_char": 9623,
+        "end_char": 9697,
+        "preview": "1.1.13 Are there any published articles about Python that I can reference?"
+      },
+      {
+        "chunk_id": "para_chunk_052",
+        "chunk_index": 52,
+        "char_length": 59,
+        "start_char": 9699,
+        "end_char": 9758,
+        "preview": "It’s probably best to cite your favorite book about Python."
+      },
+      {
+        "chunk_id": "para_chunk_053",
+        "chunk_index": 53,
+        "char_length": 82,
+        "start_char": 9760,
+        "end_char": 9842,
+        "preview": "The very first article about Python was written in 1991 and is now quite outdated."
+      },
+      {
+        "chunk_id": "para_chunk_054",
+        "chunk_index": 54,
+        "char_length": 186,
+        "start_char": 9844,
+        "end_char": 10030,
+        "preview": "Guido van Rossum and Jelke de Boer, “Interactively Testing Remote Servers Using the Python Programmi..."
+      },
+      {
+        "chunk_id": "para_chunk_055",
+        "chunk_index": 55,
+        "char_length": 37,
+        "start_char": 10032,
+        "end_char": 10069,
+        "preview": "1.1.14 Are there any books on Python?"
+      },
+      {
+        "chunk_id": "para_chunk_056",
+        "chunk_index": 56,
+        "char_length": 131,
+        "start_char": 10071,
+        "end_char": 10202,
+        "preview": "Yes, there are many, and more are being published. See the python.org wiki at https://wiki.python.or..."
+      },
+      {
+        "chunk_id": "para_chunk_057",
+        "chunk_index": 57,
+        "char_length": 141,
+        "start_char": 10204,
+        "end_char": 10345,
+        "preview": "You can also search online bookstores for “Python” and filter out the Monty Python references; or pe..."
+      },
+      {
+        "chunk_id": "para_chunk_058",
+        "chunk_index": 58,
+        "char_length": 52,
+        "start_char": 10347,
+        "end_char": 10399,
+        "preview": "1.1.15 Where in the world is www.python.org located?"
+      },
+      {
+        "chunk_id": "para_chunk_059",
+        "chunk_index": 59,
+        "char_length": 129,
+        "start_char": 10401,
+        "end_char": 10530,
+        "preview": "The Python project’s infrastructure is located all over the world and is managed by the Python Infra..."
+      },
+      {
+        "chunk_id": "para_chunk_060",
+        "chunk_index": 60,
+        "char_length": 31,
+        "start_char": 10532,
+        "end_char": 10563,
+        "preview": "1.1.16 Why is it called Python?"
+      },
+      {
+        "chunk_id": "para_chunk_061",
+        "chunk_index": 61,
+        "char_length": 291,
+        "start_char": 10565,
+        "end_char": 10856,
+        "preview": "When he began implementing Python, Guido van Rossum was also reading the published scripts from “Mon..."
+      },
+      {
+        "chunk_id": "para_chunk_062",
+        "chunk_index": 62,
+        "char_length": 56,
+        "start_char": 10858,
+        "end_char": 10914,
+        "preview": "1.1.17 Do I have to like “Monty Python’s Flying Circus”?"
+      },
+      {
+        "chunk_id": "para_chunk_063",
+        "chunk_index": 63,
+        "char_length": 20,
+        "start_char": 10916,
+        "end_char": 10936,
+        "preview": "No, but it helps. :)"
+      }
+    ]
+  },
+  "fixed_size_baseline": {
+    "settings": {
+      "chunk_size": 500,
+      "overlap": 100,
+      "stride": 400
+    },
+    "statistics": {
+      "chunk_count": 28,
+      "total_characters": 13636,
+      "average_chunk_size": 487.0,
+      "min_chunk_size": 136,
+      "max_chunk_size": 500
+    },
+    "overlap_explanation": "Fixed-size chunking with overlap repeats characters across adjacent chunks. Consequently, the total characters across chunks exceeds the original text length, and overlapping regions are counted multiple times in total and average calculations.",
+    "representative_samples": [
+      {
+        "chunk_id": "fixed_chunk_000",
+        "chunk_index": 0,
+        "strategy": "fixed_size_overlap",
+        "start_char": 0,
+        "end_char": 500,
+        "char_length": 500,
+        "chunk_size": 500,
+        "overlap": 100,
+        "text": "1.1 General Information\n\n1.1.1 What is Python?\n\nPython is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very high level dynamic data types, and classes. It supports multiple programming paradigms beyond object-oriented programming, such as procedural and functional programming. Python combines remarkable power with very clear syntax. It has interfaces to many system calls and libraries, as well as to various window systems",
+        "source": "python_faq_sample.txt"
+      },
+      {
+        "chunk_id": "fixed_chunk_001",
+        "chunk_index": 1,
+        "strategy": "fixed_size_overlap",
+        "start_char": 400,
+        "end_char": 900,
+        "char_length": 500,
+        "chunk_size": 500,
+        "overlap": 100,
+        "text": "r syntax. It has interfaces to many system calls and libraries, as well as to various window systems, and is extensible in C or C++. It is also usable as an extension language for applications that need a programmable interface. Finally, Python is portable: it runs on many Unix variants including Linux and macOS, and on Windows. To find out more, start with tutorial-index. The Beginner’s Guide to Python links to other introductory tutorials and resources for learning Python.\n\n1.1.2 What is the P",
+        "source": "python_faq_sample.txt"
+      },
+      {
+        "chunk_id": "fixed_chunk_014",
+        "chunk_index": 14,
+        "strategy": "fixed_size_overlap",
+        "start_char": 5600,
+        "end_char": 6100,
+        "char_length": 500,
+        "chunk_size": 500,
+        "overlap": 100,
+        "text": " interface change between two alpha releases. Betas are more stable, preserving existing interfaces but possibly adding new modules, and release candidates are frozen, making no changes except as needed to fix critical bugs.\n\nAlpha, beta and release candidate versions have an additional suffix:\n\n• The suffix for an alpha version is “aN” for some small number N.\n\n• The suffix for a beta version is “bN” for some small number N.\n\n• The suffix for a release candidate version is “rcN” for some small ",
+        "source": "python_faq_sample.txt"
+      },
+      {
+        "chunk_id": "fixed_chunk_027",
+        "chunk_index": 27,
+        "strategy": "fixed_size_overlap",
+        "start_char": 10800,
+        "end_char": 10936,
+        "char_length": 136,
+        "chunk_size": 500,
+        "overlap": 100,
+        "text": "y mysterious, so he decided to call the language Python.\n\n1.1.17 Do I have to like “Monty Python’s Flying Circus”?\n\nNo, but it helps. :)",
+        "source": "python_faq_sample.txt"
+      }
+    ],
+    "all_chunks": [
+      {
+        "chunk_id": "fixed_chunk_000",
+        "chunk_index": 0,
+        "char_length": 500,
+        "start_char": 0,
+        "end_char": 500,
+        "preview": "1.1 General Information\n\n1.1.1 What is Python?\n\nPython is an interpreted, interactive, object-orient..."
+      },
+      {
+        "chunk_id": "fixed_chunk_001",
+        "chunk_index": 1,
+        "char_length": 500,
+        "start_char": 400,
+        "end_char": 900,
+        "preview": "r syntax. It has interfaces to many system calls and libraries, as well as to various window systems..."
+      },
+      {
+        "chunk_id": "fixed_chunk_002",
+        "chunk_index": 2,
+        "char_length": 500,
+        "start_char": 800,
+        "end_char": 1300,
+        "preview": "Python links to other introductory tutorials and resources for learning Python.\n\n1.1.2 What is the P..."
+      },
+      {
+        "chunk_id": "fixed_chunk_003",
+        "chunk_index": 3,
+        "char_length": 500,
+        "start_char": 1200,
+        "end_char": 1700,
+        "preview": "F’s home page is at https://www.python.org/psf/.\n\nDonations to the PSF are tax-exempt in the US. If ..."
+      },
+      {
+        "chunk_id": "fixed_chunk_004",
+        "chunk_index": 4,
+        "char_length": 500,
+        "start_char": 1600,
+        "end_char": 2100,
+        "preview": " produce. If you honor the copyright rules, it’s OK to use Python for commercial use, to sell copies..."
+      },
+      {
+        "chunk_id": "fixed_chunk_005",
+        "chunk_index": 5,
+        "char_length": 500,
+        "start_char": 2000,
+        "end_char": 2500,
+        "preview": " is trademarked, and in certain cases permission is required to use it. Consult the Trademark Usage ..."
+      },
+      {
+        "chunk_id": "fixed_chunk_006",
+        "chunk_index": 6,
+        "char_length": 500,
+        "start_char": 2400,
+        "end_char": 2900,
+        "preview": "ed a lot about language design. This is the origin of many Python features, including the use of ind..."
+      },
+      {
+        "chunk_id": "fixed_chunk_007",
+        "chunk_index": 7,
+        "char_length": 500,
+        "start_char": 2800,
+        "end_char": 3300,
+        "preview": " complaints – in fact its lack of extensibility was one of its biggest problems. I had some experien..."
+      },
+      {
+        "chunk_id": "fixed_chunk_008",
+        "chunk_index": 8,
+        "char_length": 500,
+        "start_char": 3200,
+        "end_char": 3700,
+        "preview": "system administration than by writing either C programs or Bourne shell scripts, since Amoeba had it..."
+      },
+      {
+        "chunk_id": "fixed_chunk_009",
+        "chunk_index": 9,
+        "char_length": 500,
+        "start_char": 3600,
+        "end_char": 4100,
+        "preview": "o the Amoeba system calls would fill the need. I realized that it would be foolish to write an Amoeb..."
+      },
+      {
+        "chunk_id": "fixed_chunk_010",
+        "chunk_index": 10,
+        "char_length": 500,
+        "start_char": 4000,
+        "end_char": 4500,
+        "preview": "ith increasing success, and the feedback from colleagues made me add many early improvements.\n\nIn Fe..."
+      },
+      {
+        "chunk_id": "fixed_chunk_011",
+        "chunk_index": 11,
+        "char_length": 500,
+        "start_char": 4400,
+        "end_char": 4900,
+        "preview": "ge standard library that covers areas such as string processing (regular expressions, Unicode, calcu..."
+      },
+      {
+        "chunk_id": "fixed_chunk_012",
+        "chunk_index": 12,
+        "char_length": 500,
+        "start_char": 4800,
+        "end_char": 5300,
+        "preview": "et an idea of what’s available. A wide variety of third-party extensions are also available. Consult..."
+      },
+      {
+        "chunk_id": "fixed_chunk_013",
+        "chunk_index": 13,
+        "char_length": 500,
+        "start_char": 5200,
+        "end_char": 5700,
+        "preview": "r – it is incremented for less earth-shattering changes.\n\n• C is the micro version number – it is in..."
+      },
+      {
+        "chunk_id": "fixed_chunk_014",
+        "chunk_index": 14,
+        "char_length": 500,
+        "start_char": 5600,
+        "end_char": 6100,
+        "preview": " interface change between two alpha releases. Betas are more stable, preserving existing interfaces ..."
+      },
+      {
+        "chunk_id": "fixed_chunk_015",
+        "chunk_index": 15,
+        "char_length": 500,
+        "start_char": 6000,
+        "end_char": 6500,
+        "preview": "“bN” for some small number N.\n\n• The suffix for a release candidate version is “rcN” for some small ..."
+      },
+      {
+        "chunk_id": "fixed_chunk_016",
+        "chunk_index": 16,
+        "char_length": 500,
+        "start_char": 6400,
+        "end_char": 6900,
+        "preview": "tory. In practice, after a final minor release is made, the version is incremented to the next minor..."
+      },
+      {
+        "chunk_id": "fixed_chunk_017",
+        "chunk_index": 17,
+        "char_length": 500,
+        "start_char": 6800,
+        "end_char": 7300,
+        "preview": " I obtain a copy of the Python source?\n\nThe latest Python source distribution is always available fr..."
+      },
+      {
+        "chunk_id": "fixed_chunk_018",
+        "chunk_index": 18,
+        "char_length": 500,
+        "start_char": 7200,
+        "end_char": 7700,
+        "preview": "eral useful pieces of freely distributable software. The source will compile and run out of the box ..."
+      },
+      {
+        "chunk_id": "fixed_chunk_019",
+        "chunk_index": 19,
+        "char_length": 500,
+        "start_char": 7600,
+        "end_char": 8100,
+        "preview": "s.python.org/3/. PDF, plain text, and downloadable HTML versions are also available at https://docs...."
+      },
+      {
+        "chunk_id": "fixed_chunk_020",
+        "chunk_index": 20,
+        "char_length": 500,
+        "start_char": 8000,
+        "end_char": 8500,
+        "preview": "ous tutorials and books available. The standard documentation includes tutorial-index.\n\nConsult the ..."
+      },
+      {
+        "chunk_id": "fixed_chunk_021",
+        "chunk_index": 21,
+        "char_length": 500,
+        "start_char": 8400,
+        "end_char": 8900,
+        "preview": "– if you can read news it’s unnecessary to subscribe to the mailing list. comp.lang. python is high-..."
+      },
+      {
+        "chunk_id": "fixed_chunk_022",
+        "chunk_index": 22,
+        "char_length": 500,
+        "start_char": 8800,
+        "end_char": 9300,
+        "preview": "the python-announce mailing list.\n\nMore info about other mailing lists and newsgroups can be found a..."
+      },
+      {
+        "chunk_id": "fixed_chunk_023",
+        "chunk_index": 23,
+        "char_length": 500,
+        "start_char": 9200,
+        "end_char": 9700,
+        "preview": "ps://www.python. org/; an RSS feed of news is available.\n\nYou can also access the development versio..."
+      },
+      {
+        "chunk_id": "fixed_chunk_024",
+        "chunk_index": 24,
+        "char_length": 500,
+        "start_char": 9600,
+        "end_char": 10100,
+        "preview": "on Developer’s Guide.\n\n1.1.13 Are there any published articles about Python that I can reference?\n\nI..."
+      },
+      {
+        "chunk_id": "fixed_chunk_025",
+        "chunk_index": 25,
+        "char_length": 500,
+        "start_char": 10000,
+        "end_char": 10500,
+        "preview": " 1991), Amsterdam, pp 283–303.\n\n1.1.14 Are there any books on Python?\n\nYes, there are many, and more..."
+      },
+      {
+        "chunk_id": "fixed_chunk_026",
+        "chunk_index": 26,
+        "char_length": 500,
+        "start_char": 10400,
+        "end_char": 10900,
+        "preview": "\nThe Python project’s infrastructure is located all over the world and is managed by the Python Infr..."
+      },
+      {
+        "chunk_id": "fixed_chunk_027",
+        "chunk_index": 27,
+        "char_length": 136,
+        "start_char": 10800,
+        "end_char": 10936,
+        "preview": "y mysterious, so he decided to call the language Python.\n\n1.1.17 Do I have to like “Monty Python’s F..."
+      }
+    ]
+  }
+}
