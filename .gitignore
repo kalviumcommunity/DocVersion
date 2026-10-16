@@ -1,4 +1,3 @@
-cat > .gitignore <<'EOF'
 # Virtual environments
 .venv/
 venv/
@@ -18,10 +17,13 @@ data/*
 !data/sample_corpus/
 !data/sample_corpus/**
 
+# Include documentation samples for chunking strategy comparisons
+!data/sample_docs/
+!data/sample_docs/**
+
 # Python cache
 __pycache__/
 *.py[cod]
 
 # macOS
 .DS_Store
-EOF

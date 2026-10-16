@@ -2,7 +2,14 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from bs4 import BeautifulSoup
-from pypdf import PdfReader
+
+try:
+    from pypdf import PdfReader
+except ImportError:
+    try:
+        from PyPDF2 import PdfReader
+    except ImportError:
+        PdfReader = None
 
 
 # Project paths
@@ -68,6 +75,10 @@ def load_document(file_path: Path) -> Optional[Dict[str, Any]]:
 
         # Load PDF files
         elif extension == ".pdf":
+            if PdfReader is None:
+                print(f"[SKIP] No PDF library available: {file_path.name}")
+                return None
+
             reader = PdfReader(str(file_path))
 
             # Skip encrypted PDFs
