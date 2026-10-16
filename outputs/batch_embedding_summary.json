@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-16T17:02:23",
+  "model": "text-embedding-3-small",
+  "dry_run": true,
+  "batch_size": 2,
+  "total_chunks": 7,
+  "skipped_chunks": 0,
+  "pending_chunks": 7,
+  "embeddings_generated": 0,
+  "failed_batches": [],
+  "failure_count": 0,
+  "retry_events": [],
+  "api_batches_succeeded": 0,
+  "estimated_tokens_embedded": 0,
+  "price_per_million_tokens_usd": 0.02,
+  "approximate_cost_usd": 0.0,
+  "cache_entries": 0,
+  "note": "Token usage is estimated from text length. The cost is approximate, not an invoice."
+}
