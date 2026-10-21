@@ -1,0 +1,511 @@
+{
+  "method": "offline keyword-based lexical retrieval",
+  "corpus_file": "outputs/sample_chunks.json",
+  "corpus_chunk_count": 7,
+  "queries": [
+    {
+      "query_id": "query_01",
+      "query": "Employee Handbook Working Hours: Employees generally work from 9:00 AM to 5:00",
+      "expected_source": "employee_handbook.txt",
+      "expected_chunk_id": "employee_handbook_chunk_000"
+    },
+    {
+      "query_id": "query_02",
+      "query": "# Leave Policy",
+      "expected_source": "leave_policy.md",
+      "expected_chunk_id": "leave_policy_chunk_000"
+    },
+    {
+      "query_id": "query_03",
+      "query": "Security Policy Security Policy Employees must protect their account credentials. Passwords must",
+      "expected_source": "security_policy.html",
+      "expected_chunk_id": "security_policy_chunk_000"
+    },
+    {
+      "query_id": "query_04",
+      "query": "Workplace Guidelines Employees should maintain a respectful workplace. Company documents should be",
+      "expected_source": "workplace_guidelines.pdf",
+      "expected_chunk_id": "workplace_guidelines_chunk_000"
+    }
+  ],
+  "settings": [
+    {
+      "setting": "unfiltered_k1",
+      "k": 1,
+      "source_filter": false,
+      "query_count": 4,
+      "top1_source_hit_rate": 1.0,
+      "source_hit_at_k": 1.0,
+      "exact_chunk_hit_at_k": 1.0,
+      "average_returned_results": 1.0,
+      "per_query": [
+        {
+          "query_id": "query_01",
+          "query": "Employee Handbook Working Hours: Employees generally work from 9:00 AM to 5:00",
+          "expected_source": "employee_handbook.txt",
+          "expected_chunk_id": "employee_handbook_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "employee_handbook_chunk_000",
+              "text": "Employee Handbook\n\nWorking Hours:\nEmployees generally work from 9:00 AM to 5:00 PM, Monday through Friday.\n\nAttendance:\nEmployees should notify their manager if they expect to arrive late.\n\nWorkplace Conduct:\nEmployees are expected to communicate respectfully with colleagues.",
+              "metadata": {
+                "source": "employee_handbook.txt",
+                "source_path": "data/sample_corpus/employee_handbook.txt",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 276
+              },
+              "score": 1.0
+            }
+          ]
+        },
+        {
+          "query_id": "query_02",
+          "query": "# Leave Policy",
+          "expected_source": "leave_policy.md",
+          "expected_chunk_id": "leave_policy_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "leave_policy_chunk_000",
+              "text": "# Leave Policy\n\n",
+              "metadata": {
+                "source": "leave_policy.md",
+                "source_path": "data/sample_corpus/leave_policy.md",
+                "section": "Leave Policy",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 16
+              },
+              "score": 1.0
+            }
+          ]
+        },
+        {
+          "query_id": "query_03",
+          "query": "Security Policy Security Policy Employees must protect their account credentials. Passwords must",
+          "expected_source": "security_policy.html",
+          "expected_chunk_id": "security_policy_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "security_policy_chunk_000",
+              "text": "Security Policy Security Policy Employees must protect their account credentials. Passwords must not be shared with other employees. Reporting Incidents Suspected security incidents should be reported to the IT team.",
+              "metadata": {
+                "source": "security_policy.html",
+                "source_path": "data/sample_corpus/security_policy.html",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 216
+              },
+              "score": 1.0
+            }
+          ]
+        },
+        {
+          "query_id": "query_04",
+          "query": "Workplace Guidelines Employees should maintain a respectful workplace. Company documents should be",
+          "expected_source": "workplace_guidelines.pdf",
+          "expected_chunk_id": "workplace_guidelines_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "workplace_guidelines_chunk_000",
+              "text": "Workplace Guidelines\nEmployees should maintain a respectful workplace.\nCompany documents should be handled responsibly.",
+              "metadata": {
+                "source": "workplace_guidelines.pdf",
+                "source_path": "data/sample_corpus/workplace_guidelines.pdf",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 119
+              },
+              "score": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "setting": "unfiltered_k3",
+      "k": 3,
+      "source_filter": false,
+      "query_count": 4,
+      "top1_source_hit_rate": 1.0,
+      "source_hit_at_k": 1.0,
+      "exact_chunk_hit_at_k": 1.0,
+      "average_returned_results": 3.0,
+      "per_query": [
+        {
+          "query_id": "query_01",
+          "query": "Employee Handbook Working Hours: Employees generally work from 9:00 AM to 5:00",
+          "expected_source": "employee_handbook.txt",
+          "expected_chunk_id": "employee_handbook_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "employee_handbook_chunk_000",
+              "text": "Employee Handbook\n\nWorking Hours:\nEmployees generally work from 9:00 AM to 5:00 PM, Monday through Friday.\n\nAttendance:\nEmployees should notify their manager if they expect to arrive late.\n\nWorkplace Conduct:\nEmployees are expected to communicate respectfully with colleagues.",
+              "metadata": {
+                "source": "employee_handbook.txt",
+                "source_path": "data/sample_corpus/employee_handbook.txt",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 276
+              },
+              "score": 1.0
+            },
+            {
+              "chunk_id": "leave_policy_chunk_001",
+              "text": "## Annual Leave\n\nEmployees receive 20 days of annual leave per calendar year.\n\n",
+              "metadata": {
+                "source": "leave_policy.md",
+                "source_path": "data/sample_corpus/leave_policy.md",
+                "section": "Annual Leave",
+                "page": null,
+                "chunk_index": 1,
+                "start_char": 16,
+                "end_char": 95
+              },
+              "score": 0.05119880867571601
+            },
+            {
+              "chunk_id": "leave_policy_chunk_002",
+              "text": "## Leave Requests\n\nEmployees should submit leave requests to their manager in advance.\n\n",
+              "metadata": {
+                "source": "leave_policy.md",
+                "source_path": "data/sample_corpus/leave_policy.md",
+                "section": "Leave Requests",
+                "page": null,
+                "chunk_index": 2,
+                "start_char": 95,
+                "end_char": 183
+              },
+              "score": 0.05119880867571601
+            }
+          ]
+        },
+        {
+          "query_id": "query_02",
+          "query": "# Leave Policy",
+          "expected_source": "leave_policy.md",
+          "expected_chunk_id": "leave_policy_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "leave_policy_chunk_000",
+              "text": "# Leave Policy\n\n",
+              "metadata": {
+                "source": "leave_policy.md",
+                "source_path": "data/sample_corpus/leave_policy.md",
+                "section": "Leave Policy",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 16
+              },
+              "score": 1.0
+            },
+            {
+              "chunk_id": "security_policy_chunk_000",
+              "text": "Security Policy Security Policy Employees must protect their account credentials. Passwords must not be shared with other employees. Reporting Incidents Suspected security incidents should be reported to the IT team.",
+              "metadata": {
+                "source": "security_policy.html",
+                "source_path": "data/sample_corpus/security_policy.html",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 216
+              },
+              "score": 0.5740148307952571
+            },
+            {
+              "chunk_id": "leave_policy_chunk_001",
+              "text": "## Annual Leave\n\nEmployees receive 20 days of annual leave per calendar year.\n\n",
+              "metadata": {
+                "source": "leave_policy.md",
+                "source_path": "data/sample_corpus/leave_policy.md",
+                "section": "Annual Leave",
+                "page": null,
+                "chunk_index": 1,
+                "start_char": 16,
+                "end_char": 95
+              },
+              "score": 0.42598516920474294
+            }
+          ]
+        },
+        {
+          "query_id": "query_03",
+          "query": "Security Policy Security Policy Employees must protect their account credentials. Passwords must",
+          "expected_source": "security_policy.html",
+          "expected_chunk_id": "security_policy_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "security_policy_chunk_000",
+              "text": "Security Policy Security Policy Employees must protect their account credentials. Passwords must not be shared with other employees. Reporting Incidents Suspected security incidents should be reported to the IT team.",
+              "metadata": {
+                "source": "security_policy.html",
+                "source_path": "data/sample_corpus/security_policy.html",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 216
+              },
+              "score": 1.0
+            },
+            {
+              "chunk_id": "leave_policy_chunk_000",
+              "text": "# Leave Policy\n\n",
+              "metadata": {
+                "source": "leave_policy.md",
+                "source_path": "data/sample_corpus/leave_policy.md",
+                "section": "Leave Policy",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 16
+              },
+              "score": 0.13031785864049203
+            },
+            {
+              "chunk_id": "employee_handbook_chunk_000",
+              "text": "Employee Handbook\n\nWorking Hours:\nEmployees generally work from 9:00 AM to 5:00 PM, Monday through Friday.\n\nAttendance:\nEmployees should notify their manager if they expect to arrive late.\n\nWorkplace Conduct:\nEmployees are expected to communicate respectfully with colleagues.",
+              "metadata": {
+                "source": "employee_handbook.txt",
+                "source_path": "data/sample_corpus/employee_handbook.txt",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 276
+              },
+              "score": 0.08471601983690695
+            }
+          ]
+        },
+        {
+          "query_id": "query_04",
+          "query": "Workplace Guidelines Employees should maintain a respectful workplace. Company documents should be",
+          "expected_source": "workplace_guidelines.pdf",
+          "expected_chunk_id": "workplace_guidelines_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "workplace_guidelines_chunk_000",
+              "text": "Workplace Guidelines\nEmployees should maintain a respectful workplace.\nCompany documents should be handled responsibly.",
+              "metadata": {
+                "source": "workplace_guidelines.pdf",
+                "source_path": "data/sample_corpus/workplace_guidelines.pdf",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 119
+              },
+              "score": 1.0
+            },
+            {
+              "chunk_id": "employee_handbook_chunk_000",
+              "text": "Employee Handbook\n\nWorking Hours:\nEmployees generally work from 9:00 AM to 5:00 PM, Monday through Friday.\n\nAttendance:\nEmployees should notify their manager if they expect to arrive late.\n\nWorkplace Conduct:\nEmployees are expected to communicate respectfully with colleagues.",
+              "metadata": {
+                "source": "employee_handbook.txt",
+                "source_path": "data/sample_corpus/employee_handbook.txt",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 276
+              },
+              "score": 0.21503387847739897
+            },
+            {
+              "chunk_id": "leave_policy_chunk_001",
+              "text": "## Annual Leave\n\nEmployees receive 20 days of annual leave per calendar year.\n\n",
+              "metadata": {
+                "source": "leave_policy.md",
+                "source_path": "data/sample_corpus/leave_policy.md",
+                "section": "Annual Leave",
+                "page": null,
+                "chunk_index": 1,
+                "start_char": 16,
+                "end_char": 95
+              },
+              "score": 0.08471601983690695
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "setting": "oracle_source_filter_k3",
+      "k": 3,
+      "source_filter": true,
+      "query_count": 4,
+      "top1_source_hit_rate": 1.0,
+      "source_hit_at_k": 1.0,
+      "exact_chunk_hit_at_k": 1.0,
+      "average_returned_results": 1.5,
+      "per_query": [
+        {
+          "query_id": "query_01",
+          "query": "Employee Handbook Working Hours: Employees generally work from 9:00 AM to 5:00",
+          "expected_source": "employee_handbook.txt",
+          "expected_chunk_id": "employee_handbook_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "employee_handbook_chunk_000",
+              "text": "Employee Handbook\n\nWorking Hours:\nEmployees generally work from 9:00 AM to 5:00 PM, Monday through Friday.\n\nAttendance:\nEmployees should notify their manager if they expect to arrive late.\n\nWorkplace Conduct:\nEmployees are expected to communicate respectfully with colleagues.",
+              "metadata": {
+                "source": "employee_handbook.txt",
+                "source_path": "data/sample_corpus/employee_handbook.txt",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 276
+              },
+              "score": 1.0
+            }
+          ]
+        },
+        {
+          "query_id": "query_02",
+          "query": "# Leave Policy",
+          "expected_source": "leave_policy.md",
+          "expected_chunk_id": "leave_policy_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "leave_policy_chunk_000",
+              "text": "# Leave Policy\n\n",
+              "metadata": {
+                "source": "leave_policy.md",
+                "source_path": "data/sample_corpus/leave_policy.md",
+                "section": "Leave Policy",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 16
+              },
+              "score": 1.0
+            },
+            {
+              "chunk_id": "leave_policy_chunk_001",
+              "text": "## Annual Leave\n\nEmployees receive 20 days of annual leave per calendar year.\n\n",
+              "metadata": {
+                "source": "leave_policy.md",
+                "source_path": "data/sample_corpus/leave_policy.md",
+                "section": "Annual Leave",
+                "page": null,
+                "chunk_index": 1,
+                "start_char": 16,
+                "end_char": 95
+              },
+              "score": 0.42598516920474294
+            },
+            {
+              "chunk_id": "leave_policy_chunk_002",
+              "text": "## Leave Requests\n\nEmployees should submit leave requests to their manager in advance.\n\n",
+              "metadata": {
+                "source": "leave_policy.md",
+                "source_path": "data/sample_corpus/leave_policy.md",
+                "section": "Leave Requests",
+                "page": null,
+                "chunk_index": 2,
+                "start_char": 95,
+                "end_char": 183
+              },
+              "score": 0.42598516920474294
+            }
+          ]
+        },
+        {
+          "query_id": "query_03",
+          "query": "Security Policy Security Policy Employees must protect their account credentials. Passwords must",
+          "expected_source": "security_policy.html",
+          "expected_chunk_id": "security_policy_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "security_policy_chunk_000",
+              "text": "Security Policy Security Policy Employees must protect their account credentials. Passwords must not be shared with other employees. Reporting Incidents Suspected security incidents should be reported to the IT team.",
+              "metadata": {
+                "source": "security_policy.html",
+                "source_path": "data/sample_corpus/security_policy.html",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 216
+              },
+              "score": 1.0
+            }
+          ]
+        },
+        {
+          "query_id": "query_04",
+          "query": "Workplace Guidelines Employees should maintain a respectful workplace. Company documents should be",
+          "expected_source": "workplace_guidelines.pdf",
+          "expected_chunk_id": "workplace_guidelines_chunk_000",
+          "top1_source_hit": true,
+          "source_hit_at_k": true,
+          "exact_chunk_hit_at_k": true,
+          "results": [
+            {
+              "chunk_id": "workplace_guidelines_chunk_000",
+              "text": "Workplace Guidelines\nEmployees should maintain a respectful workplace.\nCompany documents should be handled responsibly.",
+              "metadata": {
+                "source": "workplace_guidelines.pdf",
+                "source_path": "data/sample_corpus/workplace_guidelines.pdf",
+                "section": "Document body",
+                "page": null,
+                "chunk_index": 0,
+                "start_char": 0,
+                "end_char": 119
+              },
+              "score": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "selected_setting": "unfiltered_k1 (k=1)",
+  "selection_basis": "Exact chunk hit@k, then source hit@k, then smaller k; oracle source-filter results excluded from selection."
+}

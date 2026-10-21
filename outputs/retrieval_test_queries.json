@@ -1,0 +1,26 @@
+[
+  {
+    "query_id": "query_01",
+    "query": "Employee Handbook Working Hours: Employees generally work from 9:00 AM to 5:00",
+    "expected_source": "employee_handbook.txt",
+    "expected_chunk_id": "employee_handbook_chunk_000"
+  },
+  {
+    "query_id": "query_02",
+    "query": "# Leave Policy",
+    "expected_source": "leave_policy.md",
+    "expected_chunk_id": "leave_policy_chunk_000"
+  },
+  {
+    "query_id": "query_03",
+    "query": "Security Policy Security Policy Employees must protect their account credentials. Passwords must",
+    "expected_source": "security_policy.html",
+    "expected_chunk_id": "security_policy_chunk_000"
+  },
+  {
+    "query_id": "query_04",
+    "query": "Workplace Guidelines Employees should maintain a respectful workplace. Company documents should be",
+    "expected_source": "workplace_guidelines.pdf",
+    "expected_chunk_id": "workplace_guidelines_chunk_000"
+  }
+]
