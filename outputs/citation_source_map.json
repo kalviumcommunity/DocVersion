@@ -1,0 +1,59 @@
+{
+  "query": "How many days of annual leave do employees receive each year?",
+  "citations": {
+    "1": {
+      "citation": "[1]",
+      "source": "leave_policy.md",
+      "source_path": "data/sample_corpus/leave_policy.md",
+      "chunk_id": "leave_policy_chunk_001",
+      "chunk_index": 1,
+      "page": null,
+      "section": "Annual Leave",
+      "retrieval_method": "offline_keyword",
+      "retrieved_text": "## Annual Leave\n\nEmployees receive 20 days of annual leave per calendar year.",
+      "original_chunk_text": "## Annual Leave\n\nEmployees receive 20 days of annual leave per calendar year.\n\n",
+      "verified_against_original": true,
+      "verification_details": {
+        "chunk_id_found": true,
+        "text_matches_original": true,
+        "source_matches_original": true
+      }
+    },
+    "2": {
+      "citation": "[2]",
+      "source": "leave_policy.md",
+      "source_path": "data/sample_corpus/leave_policy.md",
+      "chunk_id": "leave_policy_chunk_002",
+      "chunk_index": 2,
+      "page": null,
+      "section": "Leave Requests",
+      "retrieval_method": "offline_keyword",
+      "retrieved_text": "## Leave Requests\n\nEmployees should submit leave requests to their manager in advance.",
+      "original_chunk_text": "## Leave Requests\n\nEmployees should submit leave requests to their manager in advance.\n\n",
+      "verified_against_original": true,
+      "verification_details": {
+        "chunk_id_found": true,
+        "text_matches_original": true,
+        "source_matches_original": true
+      }
+    },
+    "3": {
+      "citation": "[3]",
+      "source": "leave_policy.md",
+      "source_path": "data/sample_corpus/leave_policy.md",
+      "chunk_id": "leave_policy_chunk_003",
+      "chunk_index": 3,
+      "page": null,
+      "section": "Carryover",
+      "retrieval_method": "offline_keyword",
+      "retrieved_text": "## Carryover\n\nRules regarding unused leave carryover are not specified in this sample.",
+      "original_chunk_text": "## Carryover\n\nRules regarding unused leave carryover are not specified in this sample.",
+      "verified_against_original": true,
+      "verification_details": {
+        "chunk_id_found": true,
+        "text_matches_original": true,
+        "source_matches_original": true
+      }
+    }
+  }
+}
