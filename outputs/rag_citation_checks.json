@@ -1,0 +1,423 @@
+[
+  {
+    "id": "leave_days",
+    "query": "How many days of annual leave do employees receive each year?",
+    "citation_accuracy_score": 1.0,
+    "citation_checks": {
+      "references": [
+        "1",
+        "2",
+        "3"
+      ],
+      "cited_chunk_ids": [
+        "leave_policy_chunk_001",
+        "leave_policy_chunk_002",
+        "leave_policy_chunk_003"
+      ],
+      "invalid_references": [],
+      "expected_source_ids": [
+        "leave_policy_chunk_001"
+      ],
+      "expected_sources_retrieved": [
+        "leave_policy_chunk_001"
+      ],
+      "expected_sources_cited": [
+        "leave_policy_chunk_001"
+      ]
+    },
+    "grounding_checks": [
+      {
+        "citation": "[1]",
+        "claim": "Annual Leave Employees receive 20 days of annual leave per calendar year.",
+        "chunk_id": "leave_policy_chunk_001",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[2]",
+        "claim": "Leave Requests Employees should submit leave requests to their manager in advance.",
+        "chunk_id": "leave_policy_chunk_002",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[3]",
+        "claim": "Carryover Rules regarding unused leave carryover are not specified in this sample.",
+        "chunk_id": "leave_policy_chunk_003",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      }
+    ]
+  },
+  {
+    "id": "leave_request",
+    "query": "Who should employees submit leave requests to?",
+    "citation_accuracy_score": 1.0,
+    "citation_checks": {
+      "references": [
+        "1",
+        "2",
+        "3"
+      ],
+      "cited_chunk_ids": [
+        "leave_policy_chunk_002",
+        "leave_policy_chunk_001",
+        "leave_policy_chunk_003"
+      ],
+      "invalid_references": [],
+      "expected_source_ids": [
+        "leave_policy_chunk_002"
+      ],
+      "expected_sources_retrieved": [
+        "leave_policy_chunk_002"
+      ],
+      "expected_sources_cited": [
+        "leave_policy_chunk_002"
+      ]
+    },
+    "grounding_checks": [
+      {
+        "citation": "[1]",
+        "claim": "Leave Requests Employees should submit leave requests to their manager in advance.",
+        "chunk_id": "leave_policy_chunk_002",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[2]",
+        "claim": "Annual Leave Employees receive 20 days of annual leave per calendar year.",
+        "chunk_id": "leave_policy_chunk_001",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[3]",
+        "claim": "Carryover Rules regarding unused leave carryover are not specified in this sample.",
+        "chunk_id": "leave_policy_chunk_003",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      }
+    ]
+  },
+  {
+    "id": "leave_carryover",
+    "query": "What does the sample policy say about unused leave carryover?",
+    "citation_accuracy_score": 1.0,
+    "citation_checks": {
+      "references": [
+        "1",
+        "2",
+        "3"
+      ],
+      "cited_chunk_ids": [
+        "leave_policy_chunk_003",
+        "security_policy_chunk_000",
+        "leave_policy_chunk_001"
+      ],
+      "invalid_references": [],
+      "expected_source_ids": [
+        "leave_policy_chunk_003"
+      ],
+      "expected_sources_retrieved": [
+        "leave_policy_chunk_003"
+      ],
+      "expected_sources_cited": [
+        "leave_policy_chunk_003"
+      ]
+    },
+    "grounding_checks": [
+      {
+        "citation": "[1]",
+        "claim": "Carryover Rules regarding unused leave carryover are not specified in this sample.",
+        "chunk_id": "leave_policy_chunk_003",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[2]",
+        "claim": "Security Policy Security Policy Employees must protect their account credentials.",
+        "chunk_id": "security_policy_chunk_000",
+        "source": "security_policy.html",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[3]",
+        "claim": "Annual Leave Employees receive 20 days of annual leave per calendar year.",
+        "chunk_id": "leave_policy_chunk_001",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      }
+    ]
+  },
+  {
+    "id": "working_hours",
+    "query": "What are the usual employee working hours?",
+    "citation_accuracy_score": 1.0,
+    "citation_checks": {
+      "references": [
+        "1"
+      ],
+      "cited_chunk_ids": [
+        "employee_handbook_chunk_000"
+      ],
+      "invalid_references": [],
+      "expected_source_ids": [
+        "employee_handbook_chunk_000"
+      ],
+      "expected_sources_retrieved": [
+        "employee_handbook_chunk_000"
+      ],
+      "expected_sources_cited": [
+        "employee_handbook_chunk_000"
+      ]
+    },
+    "grounding_checks": [
+      {
+        "citation": "[1]",
+        "claim": "Employee Handbook Working Hours: Employees generally work from 9:00 AM to 5:00 PM, Monday through Friday.",
+        "chunk_id": "employee_handbook_chunk_000",
+        "source": "employee_handbook.txt",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      }
+    ]
+  },
+  {
+    "id": "late_arrival",
+    "query": "Who should employees notify if they expect to arrive late?",
+    "citation_accuracy_score": 1.0,
+    "citation_checks": {
+      "references": [
+        "1",
+        "1",
+        "1",
+        "2",
+        "3"
+      ],
+      "cited_chunk_ids": [
+        "employee_handbook_chunk_000",
+        "employee_handbook_chunk_000",
+        "employee_handbook_chunk_000",
+        "leave_policy_chunk_001",
+        "leave_policy_chunk_002"
+      ],
+      "invalid_references": [],
+      "expected_source_ids": [
+        "employee_handbook_chunk_000"
+      ],
+      "expected_sources_retrieved": [
+        "employee_handbook_chunk_000"
+      ],
+      "expected_sources_cited": [
+        "employee_handbook_chunk_000"
+      ]
+    },
+    "grounding_checks": [
+      {
+        "citation": "[1]",
+        "claim": "Employee Handbook Working Hours: Employees generally work from 9:00 AM to 5:00 PM, Monday through Friday.",
+        "chunk_id": "employee_handbook_chunk_000",
+        "source": "employee_handbook.txt",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[1]",
+        "claim": "Attendance: Employees should notify their manager if they expect to arrive late.",
+        "chunk_id": "employee_handbook_chunk_000",
+        "source": "employee_handbook.txt",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[1]",
+        "claim": "Workplace Conduct: Employees are expected to communicate respectfully with colleagues.",
+        "chunk_id": "employee_handbook_chunk_000",
+        "source": "employee_handbook.txt",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[2]",
+        "claim": "Annual Leave Employees receive 20 days of annual leave per calendar year.",
+        "chunk_id": "leave_policy_chunk_001",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[3]",
+        "claim": "Leave Requests Employees should submit leave requests to their manager in advance.",
+        "chunk_id": "leave_policy_chunk_002",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      }
+    ]
+  },
+  {
+    "id": "password_sharing",
+    "query": "Can employees share passwords with other employees?",
+    "citation_accuracy_score": 1.0,
+    "citation_checks": {
+      "references": [
+        "1",
+        "1",
+        "2",
+        "2",
+        "2",
+        "3"
+      ],
+      "cited_chunk_ids": [
+        "security_policy_chunk_000",
+        "security_policy_chunk_000",
+        "employee_handbook_chunk_000",
+        "employee_handbook_chunk_000",
+        "employee_handbook_chunk_000",
+        "leave_policy_chunk_001"
+      ],
+      "invalid_references": [],
+      "expected_source_ids": [
+        "security_policy_chunk_000"
+      ],
+      "expected_sources_retrieved": [
+        "security_policy_chunk_000"
+      ],
+      "expected_sources_cited": [
+        "security_policy_chunk_000"
+      ]
+    },
+    "grounding_checks": [
+      {
+        "citation": "[1]",
+        "claim": "Security Policy Security Policy Employees must protect their account credentials.",
+        "chunk_id": "security_policy_chunk_000",
+        "source": "security_policy.html",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[1]",
+        "claim": "Passwords must not be shared with other employees.",
+        "chunk_id": "security_policy_chunk_000",
+        "source": "security_policy.html",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[2]",
+        "claim": "Employee Handbook Working Hours: Employees generally work from 9:00 AM to 5:00 PM, Monday through Friday.",
+        "chunk_id": "employee_handbook_chunk_000",
+        "source": "employee_handbook.txt",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[2]",
+        "claim": "Attendance: Employees should notify their manager if they expect to arrive late.",
+        "chunk_id": "employee_handbook_chunk_000",
+        "source": "employee_handbook.txt",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[2]",
+        "claim": "Workplace Conduct: Employees are expected to communicate respectfully with colleagues.",
+        "chunk_id": "employee_handbook_chunk_000",
+        "source": "employee_handbook.txt",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[3]",
+        "claim": "Annual Leave Employees receive 20 days of annual leave per calendar year.",
+        "chunk_id": "leave_policy_chunk_001",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      }
+    ]
+  },
+  {
+    "id": "incident_reporting",
+    "query": "Who should receive reports of suspected security incidents?",
+    "citation_accuracy_score": 1.0,
+    "citation_checks": {
+      "references": [
+        "1",
+        "1",
+        "2"
+      ],
+      "cited_chunk_ids": [
+        "security_policy_chunk_000",
+        "security_policy_chunk_000",
+        "leave_policy_chunk_001"
+      ],
+      "invalid_references": [],
+      "expected_source_ids": [
+        "security_policy_chunk_000"
+      ],
+      "expected_sources_retrieved": [
+        "security_policy_chunk_000"
+      ],
+      "expected_sources_cited": [
+        "security_policy_chunk_000"
+      ]
+    },
+    "grounding_checks": [
+      {
+        "citation": "[1]",
+        "claim": "Security Policy Security Policy Employees must protect their account credentials.",
+        "chunk_id": "security_policy_chunk_000",
+        "source": "security_policy.html",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[1]",
+        "claim": "Reporting Incidents Suspected security incidents should be reported to the IT team.",
+        "chunk_id": "security_policy_chunk_000",
+        "source": "security_policy.html",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      },
+      {
+        "citation": "[2]",
+        "claim": "Annual Leave Employees receive 20 days of annual leave per calendar year.",
+        "chunk_id": "leave_policy_chunk_001",
+        "source": "leave_policy.md",
+        "supported": true,
+        "reason": "Claim text found in cited chunk."
+      }
+    ]
+  },
+  {
+    "id": "mars_fallback",
+    "query": "What is the capital of Mars?",
+    "citation_accuracy_score": 1.0,
+    "citation_checks": {
+      "references": [],
+      "cited_chunk_ids": [],
+      "invalid_references": [],
+      "expected_source_ids": [],
+      "expected_sources_retrieved": [],
+      "expected_sources_cited": [],
+      "no_source_fallback_passed": true
+    },
+    "grounding_checks": [
+      {
+        "check": "no_source_fallback",
+        "supported": true
+      }
+    ]
+  }
+]
